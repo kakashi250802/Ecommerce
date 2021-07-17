@@ -5,7 +5,7 @@
 }
 
 .row-revere {
-    flex-direction: wrap-reverse;
+    flex-direction: row-reverse;
 }
 
 [class*="col-"] {
@@ -68,7 +68,7 @@
 
 /* media screen */
 
-@media only screen and(max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
     .col-md-0 {
         display: none;
     }
@@ -113,7 +113,7 @@
 
 /*small low reslotion */
 
-@media only screen and( max-width:750px) {
+@media only screen and ( max-width:750px) {
     .col-sm-0 {
         display: none;
     }
