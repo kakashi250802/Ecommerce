@@ -824,3 +824,147 @@ footer ul li {
 .pagination>li>a:hover {
     border: 2px solid var(--black);
 }
+
+.product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img>img {
+    max-width: 70%;
+}
+
+.product-img-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img-item {
+    width: 90px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: 1px solid var(--third-bg-color);
+}
+
+.product-img-item:hover {
+    background-color: var(--second-bg-color);
+}
+
+.product-row {
+    padding: 45px 0;
+}
+
+.product-info>*~* {
+    margin-top: 25px;
+}
+
+.product-info-detail-title {
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.product-desc {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.product-info-price {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--red);
+}
+
+.product-quantity-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.product-quantity {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.product-quantity-btn {
+    height: 30px;
+    width: 30px;
+    background-color: var(--grey);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.product-quantity-btn i {
+    font-size: 20px;
+    color: var(--main-bg-color);
+}
+
+.box-header {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.product-detail-desc {
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.product-detail-desc-content {
+    text-align: justify;
+    line-height: 26px;
+    font-size: 16px;
+    height: 600px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.product-detail-desc-content.active {
+    height: max-content;
+}
+
+.btn-view-desc {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user-rate {
+    margin-bottom: 40px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.user-avt {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow-y: hidden;
+}
+
+.user-name {
+    margin-left: 20px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.user-rate-content {
+    line-height: 25px;
+}
