@@ -107,7 +107,7 @@ products.forEach(e => {
         </div>
         <div class="product-card-info">
             <div class="product-btn">
-                <button class="btn-flat btn-hover btn-show-now">shop now</button>
+            <a href="./product-detail.html" class="btn-flat btn-hover btn-show-now">shop now</a>
                 <button class="btn-flat btn-hover btn-card-add">
                     <i class='bx bxs-cart-add'></i>
                 </button>

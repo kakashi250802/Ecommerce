@@ -142,6 +142,26 @@
          ::-webkit-scrollbar {
             display: none;
         }
+        .filter-toggle-box {
+            display: block;
+        }
+        .filter-col {
+            position: fixed;
+            width: 100%;
+            background-color: var(--main-bg-color);
+            z-index: 98;
+            left: 100%;
+            height: 80vh;
+            overflow-y: scroll;
+            box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+            transition: left 0.2s ease-in-out;
+        }
+        .filter-col.active {
+            left: 0;
+        }
+        .pagination {
+            justify-content: center;
+        }
     }
     
     @media only screen and (max-width: 750px) {
