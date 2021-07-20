@@ -12,9 +12,11 @@ hideAllSlide = () => {
 }
 nowSlide_index.forEach((slideIndex, index) => {
     slideIndex.addEventListener('click', () => {
+        slide_index = index;
         hideAllSlide();
         slides[index].classList.add('active');
         nowSlide_index[index].classList.add('active');
+
     });
 })
 showSlide = () => {
