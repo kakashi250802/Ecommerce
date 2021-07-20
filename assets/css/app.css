@@ -968,3 +968,30 @@ footer ul li {
 .user-rate-content {
     line-height: 25px;
 }
+
+.slide-index {
+    display: flex;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide-index>*~* {
+    margin: 0 4px;
+}
+
+.slide-index>i {
+    font-size: 40px;
+    color: #ccc;
+    font-weight: 200 !important;
+}
+
+.slide-index>i.active {
+    color: var(--black);
+}
+
+.slide-index>i:hover {
+    cursor: pointer;
+    color: var(--black);
+}

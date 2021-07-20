@@ -1,14 +1,26 @@
 let slide_index = 0;
 let slide_play = true;
 let slides = document.querySelectorAll('.slide');
+let nowSlide_index = document.querySelectorAll('.slide-index i');
 hideAllSlide = () => {
     slides.forEach(e => {
         e.classList.remove('active');
     });
+    nowSlide_index.forEach(e => {
+        e.classList.remove('active');
+    })
 }
+nowSlide_index.forEach((slideIndex, index) => {
+    slideIndex.addEventListener('click', () => {
+        hideAllSlide();
+        slides[index].classList.add('active');
+        nowSlide_index[index].classList.add('active');
+    });
+})
 showSlide = () => {
     hideAllSlide();
     slides[slide_index].classList.add('active');
+    nowSlide_index[slide_index].classList.add('active');
 }
 nextSlide = () => slide_index = slide_index + 1 === slides.length ? 0 : slide_index + 1;
 prevSlide = () => slide_index = slide_index - 1 < 0 ? slides.length - 1 : slide_index - 1;
