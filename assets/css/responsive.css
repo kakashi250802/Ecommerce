@@ -166,7 +166,7 @@
     
     @media only screen and (max-width: 750px) {
         .hero {
-            height: calc(77vh - ( var(--top-header-size) + var(--mid-header-size) + var(--bottom-header-size)));
+            height: calc(95vh - ( var(--top-header-size) + var(--mid-header-size) + var(--bottom-header-size)));
             margin-bottom: 60px;
         }
         .info-content h2 {
